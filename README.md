@@ -2,12 +2,14 @@
 
 
 ## Setup
-### CMD command to run virtual environment:
+* ### CMD command to run virtual environment:
+```bash
 uv venv -p 3.11
-#### activate venv, then install requirements:
+```
+* ### activate venv, then install requirements:
+```bash
 uv pip install -r requirements.txt
 ```
-
 ## Run ETL
 ```bash
 uv run python scripts/run_etl.py 
