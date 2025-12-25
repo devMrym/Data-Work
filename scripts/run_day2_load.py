@@ -54,11 +54,11 @@ def main() -> None:
         .pipe(add_missing_flags, cols=["amount", "quantity"])
     )
 
-
+    
 
 
 #7. writes orders_clean.parquet
-
+    
     write_parquet(orders_clean, paths.processed / "orders_clean.parquet")
     write_parquet(schema_users, paths.processed / "users.parquet")
 
