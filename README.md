@@ -2,21 +2,16 @@
 
 
 ## Setup
-* ### CMD command to run virtual environment:
-```bash
+### CMD command to run virtual environment:
 uv venv -p 3.11
-```
-
-* ### activate venv, then install requirements:
-```bash
+#### activate venv, then install requirements:
 uv pip install -r requirements.txt
 ```
 
 ## Run ETL
 ```bash
 uv run python scripts/run_etl.py 
-```
-* ### After running ETL you should find these files:
+### After running ETL you should find these files:
 1. data/processed/orders_clean.parquet
 2. data/processed/users.parquet
 3. data/processed/analytics_table.parquet
